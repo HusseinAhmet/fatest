@@ -5,6 +5,7 @@ from flask import json
 
 
 app= Flask(__name__)
+
 @app.route("/")
 def get_saw():
   return "<h1>Welcome to Adaptive Speech</h1>"  
@@ -16,4 +17,5 @@ def maw():
   return "<h1>Helloooooo</h1>"  
 
 
-app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
